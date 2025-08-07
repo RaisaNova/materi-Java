@@ -5,6 +5,6 @@ public class loopjava {
             menabung += 1000;
             System.out.println("Menabung hari ke-" + i + " sejumlah " + menabung);
         }
-
+        System.out.println("total menabung selama 30 hari adalah " + menabung);
     }
 }
