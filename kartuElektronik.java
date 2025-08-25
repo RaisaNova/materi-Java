@@ -4,7 +4,7 @@ public class kartuElektronik {
     private double saldo;
 
     public kartuElektronik() {
-        this.saldo = 0.0;
+        this.saldo = 10000;
     }
 
     public String tapIn() {
@@ -34,7 +34,8 @@ public class kartuElektronik {
             System.out.println("\nMenu:");
             System.out.println("1. Tap In");
             System.out.println("2. Isi Ulang");
-            System.out.println("3. Keluar");
+            System.out.println("3. Melihat Saldo");
+            System.out.println("4. Keluar");
             System.out.print("Pilihan: ");
             pilihan = input.nextInt();
 
@@ -58,12 +59,16 @@ public class kartuElektronik {
                     System.out.println("Isi ulang berhasil! Saldo sekarang: Rp" + kartu.getSaldo());
                     break;
                 case 3:
+                    kartu.getSaldo();
+                    System.out.println("Saldo Anda Adalah: Rp" + kartu.getSaldo());
+                    break;
+                case 4:
                     System.out.println("Keluar dari program...");
                     break;
                 default:
                     System.out.println("Pilihan tidak valid!");
             }
-        } while (pilihan != 3);
+        } while (pilihan != 4);
 
         input.close();
     }
