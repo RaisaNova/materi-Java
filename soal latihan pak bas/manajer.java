@@ -10,7 +10,8 @@ class Manajer extends pegawai {
     // Override method tampilkanData
     @Override
     public void tampilkanData() {
-        super.tampilkanData(); 
+        System.out.println("Nama: " + nama); 
+        System.out.println("Id Pegawai:  " + idPegawai); 
         System.out.println("Divisi: " + divisi); 
     }
 }
