@@ -84,12 +84,10 @@ public class Main_project {
             found = true;
         }
 
-        // If no employee is found with the input ID
         if (!found) {
             System.out.println("Tidak ada pegawai dengan ID " + inputId);
         }
 
-        // Close the scanner
         scanner.close();
     }
 
